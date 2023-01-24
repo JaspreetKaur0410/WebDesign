@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+	<script src="script.js"></script>
+    <style>
+      label {
+        float: left;
+        width: 150px;
+      }
+      #container {
+        width: 700px;
+        margin: auto;
+        background-color: beige;
+      }
+      main {
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h2>Feeback</h2>
+        <h3>Love something? Hate something? Let us know!</h3>
+        Note : Fields marked with an asterisk(*) are mandatory
+        <br /><br />
+        <form method="get" action="Output.html" id="submit_form">
+          <div id="form_elements">
+          <label>Title*:</label>
+          <input
+            type="radio"
+            name="title"
+            id="miss"
+            value="miss"
+            required="required"
+          />Miss
+          <input
+            type="radio"
+            name="title"
+            id="mr"
+            value="mr"
+            required="required"
+          />Mr.
+          <input
+            type="radio"
+            name="title"
+            id="mrs"
+            value="mrs"
+            required="required"
+          />Mrs. <br /><br />
+
+
+          <label for="firstName">First Name*:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            required="required"
+            onblur="validateInputs(this, 1, 'FName')"
+          />
+          <br /><br />
+
+          <div id="errorMsgFName" style="display: none; color: red">
+            Invalid input
+            <br /><br />
+          </div>
+
+          <label for="lastName">Last Name*:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+            required="required"
+			      onblur="validateInputs(this, 1, 'LName')"
+          />
+          <br /><br />
+          <div id="errorMsgLName" style="display: none; color: red">
+            Invalid input
+            <br /><br />
+          </div>
+
+
+          <label for="emailId">Email Id*:</label>
+          <input
+            type="text"
+            name="emailId"
+            id="emailId"
+            placeholder="yourname@northeastern.edu"
+            required="required"
+			      onblur="validateInputs(this, 2)"
+          />
+          <br /><br />
+          <div id="errorMsgEmailId" style="display: none; color: red">
+            Invalid input for your email id. Please enter email id in proper
+            format.
+            <br /><br />
+          </div>
+
+
+          <label for="phoneNumber">Phone Number*:</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="xxx-xxx-xxxx"
+            required="required"
+			      onblur="validateInputs(this, 3)"
+            maxlength="12"
+          />
+          <br /><br />
+
+          <div id="errorMsgPhone" style="display: none; color: red">
+            Invalid input for your phone number. Only numerical values
+            permitted and in the requested format xxx-xxx-xxxx.
+            <br /><br />
+          </div>
+
+          <label for="streetAddress1">Street Address 1*:</label>
+          <input
+            type="text"
+            name="streetAddress1"
+            id="streetAddress1"
+            required="required"
+            placeholder="address"
+          />
+          <br /><br />
+
+
+          <label for="streetAddress2">Street Address 2:</label>
+          <input
+            type="text"
+            name="streetAddress2"
+            id="streetAddress2"
+            placeholder="address"
+          />
+          <br /><br />
+
+          <label for="city">City*:</label>
+          <input type="text" name="city" id="city" placeholder="city" 
+          required="required"
+          onblur="validateInputs(this, 1, 'city')"/>
+          <br /><br />
+
+          <div id="errorMsgcity" style="display: none; color: red">
+            Invalid input
+            <br /><br />
+          </div>
+
+          <label for="state">State*:</label>
+          <input type="text" name="state" id="state" placeholder="state" 
+          required="required"
+          onblur="validateInputs(this, 1, 'state')"/>
+          <br /><br />
+
+          <div id="errorMsgstate" style="display: none; color: red">
+            Invalid input
+            <br /><br />
+          </div>
+
+          <label for="zipcode">ZipCode*:</label>
+          <input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" onblur="validateInputs(this, 4)" required="required"/>		  
+          <br /><br />
+
+          <div id="errorMsgZipCode" style="display: none; color: red">
+            Invalid input for your zipcode. Only numerical values permitted
+            and in the requested format xxxxx.
+            <br /><br />
+          </div>
+
+          <label for="zipcode">How did you hear*:</label>
+          <input type="checkbox" class="hear" name="source" value="facebook" onclick="isChecked();"/> Facebook
+          <input type="checkbox" class="hear" name="source" value="google" onclick="isChecked();"/> Google
+          <input type="checkbox" class="hear" name="source" value="yelp" onclick="isChecked();"/> Yelp <br /><br />
+
+          <div id="errorSource" class="errorDiv">
+            Please select atleast one option.
+          </div>
+          <br />
+
+          <label for="comments">Comments*:</label>
+          <textarea
+            name="text"
+            id="comments"
+            placeholder="Your comments"
+            required="required"
+            rows="5"
+            cols="25"
+          ></textarea>
+          <br /><br />
+
+          <label for="hobbbies">Hobbies *</label>
+          <select
+            onchange="hobbieslist(this)"
+            name="hobby"
+            id="hobby"
+            required
+          >
+            <option value="Dance">Dance</option>
+            <option value="Sport">Sport</option>
+            <option value="Food">Food</option>
+            <option value="Travelling">Travelling</option>
+            <option value="Shopping">Shopping</option>
+          </select>
+          <br />
+          <br />
+        </div>
+          <input type="Submit" id="btnsubmit" onclick="submitForm()"/>
+          <input type="Reset" />
+          <br /><br />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

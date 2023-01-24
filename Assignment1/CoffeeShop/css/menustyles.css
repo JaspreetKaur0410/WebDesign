@@ -1,0 +1,39 @@
+a:visited {
+    color: seagreen;
+}
+a:hover {
+    color: red;
+}
+
+.image1{
+    background-color: chocolate;
+    display: inline-block;
+    height: 200px;
+    width:200px;
+}
+.image2{
+    background-color: chocolate;
+    display: inline-block;
+    height: 200px;
+    width:200px;
+}
+.image3{
+    background-color: chocolate;
+    display: inline-block;
+    height: 200px;
+    width:200px;
+}
+.image4{
+    background-color: chocolate;
+    display: inline-block;
+    height: 200px;
+    width:200px;
+}
+
+section{
+    display: inline-block;
+}
+
+.images{
+    align-content: center;
+}

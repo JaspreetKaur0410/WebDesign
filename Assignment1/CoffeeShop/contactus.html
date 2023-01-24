@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="fav/logo.png">   
+    <title>ContactUs</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="heading">
+                <a class="logo" href="index.html"></a><img class="logo_img" src="Images/logo.png" alt="index.html">
+                <h1 class="h1_logo">BARISTAS</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a class="links" href="index.html">Home</a></li>
+                    <li><a class="links" href="menu.html">Browse Menu</a></li>
+                    <li><a class="links" href="contactus.html">Contactus</a></li> 
+                </ul>
+                <ul>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com/jk__thought_merchant/" class="fa fa-instagram" target="_blank"></a>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form_container">
+                <div class="form-box">
+                    <div class="form">
+                        <div class="box">
+                            <label>Name</label>
+                            <input class="input_text" type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="box">
+                            <label for="Email">Email <br></label>
+                            <input class="input_text" type="text" placeholder="Email" id="Email" autofocus>
+                        </div>
+                        <div class="box">
+                            <label for="Password">Password <br> </label>
+                            <input class="input_text" type="password" placeholder="password" id="Password" autofocus>
+                        </div>
+                        <div class="box">
+                            <label for="Message">Message</label>
+                            <textarea rows="10" cols="25" placeholder="Enter message here" id="Message"></textarea>
+                        </div>
+                        <div class="box">
+                            <p>Please select your contact reason:</p>
+                            <input name="type" type="radio" value="Casual">Casual
+                            <input name="type" type="radio" value="Casual">Complaint
+                            <input name="type" type="radio" value="Casual">Information  
+                        </div>
+                        <div class="box">
+                            <input class="submit" type="submit" value="submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p class="center">Copyright &copy; CoffeShop - All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

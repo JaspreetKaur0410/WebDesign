@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+        <style>
+            .wrapper{
+                width: 20%;
+                background-color: beige;
+                margin-left: auto;
+                margin-right: auto;
+                  
+            }
+            #table{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 150px;
+                border: 2px solid black;
+              
+            }
+            td, th{
+                text-align: center;
+                border: 1px solid black;
+            }
+        </style>
+        <script src="script.js"></script>
+       
+    </head>
+
+    <body onload="createRows()">
+
+        <div class="wrapper" onload="createRows()">
+            <table id="table" onload="createRows()">
+                <tr>
+                    <th>
+                        Fields
+                    </th>
+                    <th>
+                        Values
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,252 @@
+.navbar {
+    background: bisque;
+    border: 10px solid rgb(119, 119, 196);
+}
+h1.h1_logo{
+    color:chocolate;
+    margin: 0;
+    display: inline-block;
+}
+img.logo_img{
+    display: inline;
+}
+div.links{
+    display: inline;
+}
+div.heading{
+    display: inline-block;
+}
+div.links{
+    display: inline-block;
+    margin:0px 14px;
+    align-self: center; 
+    font-size: 22px;
+    float: right;
+}
+li{
+    display: inline-block;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa:visited{
+      color:white;
+  }
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: rgb(219, 205, 205);
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-instagram:visited{
+    color:red;
+  }
+
+main{
+    display : inline-block;
+    margin: 10px;
+    height: 650px;
+}
+
+div.box-cell.box1{
+    display: inline-block;
+    background-color: rgb(194, 153, 120);
+    width: 45%;
+    border-radius: 30px;
+    margin: 1px;
+    padding:0.1px;
+    border:5px solid chocolate;
+}
+div.box-cell.box4{
+    display: inline-block;
+    background-color: rgb(194, 153, 120);
+    width: 53%;
+    border-radius: 30px;
+    margin: 1px;
+    padding:0.1px;
+    border:5px solid chocolate;
+}
+
+div.box-cell.box2{
+    display: inline-block;
+    width:700px;
+    background-color: rgb(151, 146, 143);
+}
+
+div.box-cell.box3{
+    display: inline-block;
+    height:350px;
+    background-color: rgb(151, 146, 143);
+}
+
+
+p.content{
+    font-size: 30px;
+    padding:2px;
+    text-align: center;
+    color:darkblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img.content_img1{
+    display: inline-block;
+    width:700px;
+}
+img.content_img2{
+    display: inline-block;
+    height:466px;
+    width: 842px;
+}
+
+button.join{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -17%);
+    border-radius: 50%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: chocolate;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+    align-content: center;
+    background-color: burlywood;
+}
+
+.gallery{
+    float: left;
+    width: 150px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid red;
+
+}
+.gallery:hover{
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 10px -10px grey;
+    border: 1px solid #777;
+}
+.gallery img{
+    width: 150px;
+    height: 150px;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: rgb(22, 10, 2);
+}
+
+div#gallery_container{
+    display: inline-block;
+}
+
+#gallery_container.gallery{
+    display: inline-block;
+}
+
+.form-box{
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    z-index: 15;
+    top: 35%;
+    left: 38%;
+    margin: -100px 0 0 -150px;
+    background: chocolate;
+    border: 10px solid rgb(231, 175, 134);
+}
+
+div.form-box{
+    line-height: 40px;
+}
+
+.form{
+    margin:50px;
+}
+
+label{
+    display: inline-block;
+}
+
+.input_text,textarea {
+    width: 100%;
+}
+
+form.box{
+    line-height: 14px;
+}
+
+.box p{
+    line-height: 0.5px;
+}
+.submit{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, 29%);
+    background-color: rgb(209, 143, 92);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
